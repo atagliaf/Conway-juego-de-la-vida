@@ -37,11 +37,11 @@ def mostrar(M):
     print('paso ', mostrar.paso)
     f='   ['
     for j in c_range:
-        f=f+str(format(j, "02d"))+ ' '
+        f=f+str(format(j, "d"))+ ' '
     f=f+']'; print(f)
     
     for i in f_range:      
-        f='['+str(format(i, "02d"))+']|'
+        f='['+str(format(i, "d"))+']|'
         for j in c_range:
             f=f+CHAR[M[i][j]] + '|'
         print(f)
